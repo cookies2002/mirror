@@ -19,15 +19,15 @@ class TgClient:
         LOGGER.info("Creating client from BOT_TOKEN")
         cls.ID = Config.BOT_TOKEN.split(":", 1)[0]
         cls.bot = Client(
-            cls.ID,
-            Config.TELEGRAM_API,
-            Config.TELEGRAM_HASH,
-            proxy=Config.TG_PROXY,
-            bot_token=Config.BOT_TOKEN,
-            workdir="/home/ubuntu/mirror/session",
-            parse_mode=enums.ParseMode.HTML,
-            
-        )
+    cls.ID,
+    Config.TELEGRAM_API,
+    Config.TELEGRAM_HASH,
+    proxy=Config.TG_PROXY,
+    bot_token=Config.BOT_TOKEN,
+    workdir="/home/ubuntu/mirror/session",
+    parse_mode=enums.ParseMode.HTML,
+)
+
         await cls.bot.start()
         cls.NAME = cls.bot.me.username
 
