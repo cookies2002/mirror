@@ -24,7 +24,7 @@ class TgClient:
             Config.TELEGRAM_HASH,
             proxy=Config.TG_PROXY,
             bot_token=Config.BOT_TOKEN,
-            workdir="/usr/src/app",
+            workdir="/home/ubuntu/mirror/session",
             parse_mode=enums.ParseMode.HTML,
             
         )
