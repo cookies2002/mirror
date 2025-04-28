@@ -26,7 +26,7 @@ class TgClient:
             bot_token=Config.BOT_TOKEN,
             workdir="/usr/src/app",
             parse_mode=enums.ParseMode.HTML,
-            max_concurrent_transmissions=10,
+            
         )
         await cls.bot.start()
         cls.NAME = cls.bot.me.username
